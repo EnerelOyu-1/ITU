@@ -1,39 +1,131 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Home page</title>
-    </head>
-    <style>
-        table, th, td{
-            border: 2px dotted rgb(8, 140, 249);
-        }
-    </style>
-    <body>
-        <h2 style = color:black>Нүүр хуудас</h2>
-        <table style = "width:50%">
-            <tr>
-                <th>Contact</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>About me</td>
-                <td><a href="https://enereloyu-1.github.io/ITU/lab2/aboutMe" target="_blank">Click here</a></td>
-            </tr>
-            <tr>
-                <td>My Family</td>
-                <td><a href="https://enereloyu-1.github.io/ITU/lab2/myFamily" target = "_blank">Click here</a></td>
-            </tr>
-            <tr>
-                <td>My Friends</td>
-                <td><a href="https://enereloyu-1.github.io/ITU/lab2/myFriends" target = "_blank">Click here</a></td>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
 
-            </tr>
-            <tr>
-                <td>My Contact Info</td>
-                <td><a href="https://enereloyu-1.github.io/ITU/lab2/myContacts" target = "_blank">Click here</a></td>
-            </tr>
-        </table>
-        
-    </body>
+    <style>
+        /* General Body Styling */
+        body {
+            background-color: bisque;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            background-color: darkslategray;
+            text-align: center;
+            font-size: 2.5em;
+            color: cadetblue;
+            margin: 20px 0;
+            padding: 30px;
+            text-transform: uppercase;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th {
+            padding: 20px;
+            font-size: 1.8em;
+            color: saddlebrown;
+            background-color: white;
+            border-bottom: 2px solid saddlebrown;
+        }
+
+        td {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5em;
+            color: cadetblue;
+            background-color: white;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        td:hover {
+            background-color:lemonchiffon;
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 150px;
+            height: 80px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        td:hover img {
+            transform: scale(1.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: cadetblue;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: saddlebrown;
+        }
+
+        @media (max-width: 768px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            td {
+                padding: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page!</h1>
+
+    <table>
+        <tr>
+            <th colspan="4">Миний танилцуулга</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://enereloyu-1.github.io/ITU/lab2/aboutMe">
+                    <img src="aboutme.png" alt="Миний тухай">
+                    <p>Миний тухай</p>
+                </a>
+            </td>
+            <td>
+                <a href="https://enereloyu-1.github.io/ITU/lab2/myFamily">
+                    <img src="myfamily.png" alt="Миний гэр бүл">
+                    <p>Миний гэр бүл</p>
+                </a>
+            </td>
+            <td>
+                <a href="https://enereloyu-1.github.io/ITU/lab2/myFriends">
+                    <img src="myfriends.jpg" alt="Миний найзууд">
+                    <p>Миний найзууд</p>
+                </a>
+            </td>
+            <td>
+                <a href="https://enereloyu-1.github.io/ITU/lab2/myContacts">
+                    <img src="contact.png" alt="Холбоо барих">
+                    <p>Холбоо барих</p>
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
 </html>
