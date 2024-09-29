@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:white;
+    color:#333;
+    line-height: 1.6;
+}
+header{
+    background-color: #4f6caa;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    color: #b3c7f9;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+header nav {
+    margin-right: 20px;
+}
+h2{
+    background-color: #4f6caa;
+    padding-right: 20px;
+    color: white;
+    text-align: right;
+    font-weight:lighter;
+    font-size: 1.5rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.profile-sidebar{
+    flex: 1;
+    background-color:white;
+    padding: 10px;
+    
+}
+.profile-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #365899;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.profile-header a{
+    color: #d8dfea;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+.profile-header a:hover {
+    text-decoration: underline;
+}
+
+figure.profile-pic {
+    border: 2px solid #ccc;
+    padding: 2px;
+    background-color: white;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+figure.profile-pic img {
+    width: 100%;
+    border: 1px solid #3b5998; /* Inner picture border */
+    display: block;
+}
+
+.friends-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.friend{
+    margin: 0 10px;
+    text-align: center;
+}
+.friend img{
+    width: 70px;
+    height : 70px;
+    border-radius: 10px;
+}
+
+.friend h3{
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+button{
+    background-color:#4f6caa;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:100%;
+}
+button:hover {
+    background-color: #365899;
+}
+
+.profile-details h2{
+    margin-top: 5px;
+    font-size: 0.9em;
+    border-style:solid;
+    border-color: #4f6caa;
+    background-color: #4f6caa;
+    color:white;
+    font-weight: 100;
+    text-align: center;
+}
+.profile-details p{
+    border-style: solid;
+}
+.profile-details 
+
+.profile-main{
+    flex: 3;
+    background-color:white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.profile-main p{
+    background-color: #4f6caa;
+    color:white;
+    font-size: 1.0em;
+    margin-top: 15px;
+    height: 36px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding:6px;
+    padding-left: 8px ;
+
+}
+.profile-main h2{
+    margin-top: 16px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight:100;
+}
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left:20px ;
+}
+
+.info-table th, .info-table td {
+    padding: 5px;
+    text-align: left; 
+    border-bottom: 1px solid white;
+}
+
+.info-table thead th {
+
+    padding: 2px;
+    text-align: left;
+    font-weight: bold;
+}
+.vertical-header {
+    padding: 20px;
+    text-align: left;
+    font-weight: 100;
+}
+.sidebar{
+    background-color:white;
+    padding: 10px;
+    width: 200px;
+    border: 1px dashed #4f6caa;
+}
+.quick-search{
+    border: 1px dashed #4f6caa;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.quick-search input[type="text"]{
+    width:100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 1em;
+}
+.quick-search button{
+    width: 100%;
+    background-color: #4f6caa;
+    color: white;
+    border: none;
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.quick-search button:hover{
+    background-color: #365899;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+.sidebar ul li{
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.sidebar ul li a{
+    color: #4f6caa;
+    font-size: 0.9em;
+    list-style-type: none;
+    
+}
+.sidebar-nav ul li a:hover{
+    display: inline-grid;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
