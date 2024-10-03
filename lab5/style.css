@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #1b1b6c;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  font-size: 15px;
+}
+
+i{
+  font-size: 15px;
+  padding: 5px;
+}
+h1, h2, h3, p {
+  margin: 10px 0;
+}
+
+.header-box {
+  text-align: left;
+  background-color: #13124f;
+  color: white;
+  padding: 80px 35px;
+  width: 100vw;
+}
+
+.header-box h1{
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+.header-box p{
+  font-size: 20px;
+}
+.learnmore {
+  background-color: #f61067;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.learnmore:hover {
+  background-color: #e6005c;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Two-thirds for left content, one-third for right */
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.leftside {
+  background-color: white;
+  padding: 15px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftside h2{
+  font-size: 50px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+.leftside p {
+  margin-bottom: 10px;
+}
+
+.video {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.alert {
+  background-color: #9090a5;
+  padding: 10px;
+  text-align: left;
+  color:white;
+}
+
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.message {
+  background-color: #f61067;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.message .message-cnt span {
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  line-height: 20px; 
+  text-align: center; 
+  background-color:#352ba5; 
+  color: #fff; 
+  border-radius: 50%;  
+  margin-left: 10px;  
+  font-size: 12px; 
+}
+
+.message-cnt i {
+  margin-right: 10px; 
+  color: white; 
+  font-size: 15px; 
+  padding-right: 2px;
+}
+.welcome-box {
+  color:white;
+  background-color:#13124f;
+  text-align: center;
+}
+.welcome-box h3{
+  background-color: #9090a5;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 15px;
+  margin: 0;
+}
+.welcome-box input {
+  color:#9090a5;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9090a5;
+  border-top: 1px solid #9090a5;
+  border-radius: 5px;
+  background-color: #1b1b6c;
+  margin-bottom: 10px;
+  padding: 5px;
+
+}
+
+.welcome-box p{
+  font-size: 12px;
+  text-align: center;
+}
+
+.welcome-box .send-button {
+  background-color: #f61067;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 100px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.welcome-box .send-button:hover {
+  background-color: #e6005c;
+}
+
+.welcome-box a {
+  display: block;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  background-color:#352ba5;
+  padding: 10px;
+}
+
+.welcome-box a:hover {
+  text-decoration: underline;
+}
+
+.vote-box {
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vote-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.vote-buttons button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.progress-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  background-color: #2ad392;
+}
+
+.progress-bar {
+  height: 30px;
+  text-align: left;
+}
+
+#progress-lame {
+  width: 55%;
+  background-color: #f61067;  /* Red for LAME */
+}
+
+.cool-btn {
+  background-color:#f61067;
+  color: white;
+  width: 48%;
+  border: solid 2px #f61067;
+}
+
+
+.lame-btn {
+  color:#2ad392;
+  width: 48%;
+  border: solid 2px #2ad392;
+}
+
+.lame-btn:hover {
+  background-color: #28a428;
+  color:white;
+}
+
+.cool-btn:hover {
+  background-color: white;
+  color:#f61067;
+}
+footer{
+  background-color: #13124f;
+  color:white;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+@media(max-width: 1024px){
+  .main-container{
+    grid-template-columns: 1fr;
+  }
+
+  .leftside{
+    order: 1;
+  }
+
+  .right-side{
+    order: 2;
+  }
+}
+
+@media(max-width: 767px){
+
+  .header-box h1{
+    font-size: 24px;
+  }
+
+  .header-box p{
+    font-size: 16px;
+  }
+  .learnmore {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .main-container{
+    display: block;
+  }
+
+  .leftside, .right-side{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .video iframe{
+    width: 100%;
+    height: auto;
+  }
+}
