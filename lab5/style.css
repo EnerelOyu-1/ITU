@@ -267,7 +267,7 @@ footer{
   }
 }
 
-@media(max-width: 767px){
+@media(max-width: 800px){
 
   .header-box h1{
     font-size: 24px;
