@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bodlog 2</title>
+    </head>
+    <body>
+        <h2>
+            Чоно 25 км/ц хурдтай, туулай 18 км/ц хурдтай. Гараас өгсөн зайтай байхад хэдэн минут хэдэн секундын дараа гэхэд гүйцэх вэ?
+        </h2>
+        <script>
+            let dis = parseInt(prompt("Хоорондох зайг орууларай (км): "), 10);
+            var wolf = 25; // Чонон хурд 
+            var rabbit = 18; // Туулайны хурд
+
+            // Хурдны зөрүү
+            var d = wolf - rabbit;
+
+            var h = dis / d; // tsag
+            var s = h * 3600; // second
+
+            // minut second bolgoh
+            var mint = Math.floor(s / 60);
+            var scnds = Math.round(s % 60);
+
+            document.write("Чоно " + mint + " минут " + scnds + " секундын дараа туулайг гүйцэнэ.");
+        </script>
+    </body>
+</html>

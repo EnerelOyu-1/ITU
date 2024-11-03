@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bodlog 4</title>
+    </head>
+    <body>
+        <h2>Array-д өгөгдсөн 5 тооны хамгийн бага ерөнхий хуваагдагчийг ол.</h2>
+        <script>
+            const arr = [];
+            for(let i = 0; i < 5; i++){
+                const num = parseInt(prompt("Хүснэгтэнд тоо орууларай: "));
+                arr.push(num);
+            }
+
+            let gcd = arr[0];
+            for(let i = 1; i < 5; i++){
+                let a = gcd;
+                let b = arr[i];
+
+                while(b != 0){
+                    let temp = b;
+                    b = b % a;
+                    a = temp;
+                }
+                gcd = a;
+            }
+            document.write("Хамгийн бага ерөнхий хуваагдагч нь : "+ gcd); 
+
+        </script>
+    </body>
+</html>

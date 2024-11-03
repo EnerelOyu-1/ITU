@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bodlogo 5</title>
+    </head>
+    <body>
+        <h2>
+            Вэб сайтруу өглөө ороход гараас өгсөн тооны 2 зэрэгийг, орой ороход гараас өгсөн тооны язгуурыг ол.
+        </h2>
+        <script>
+            const currHour = new Date().getHours();
+            
+            if (currHour >= 6 && currHour < 20) { 
+                const mn = parseInt(prompt("Тоо оруулаарай: "));
+                const res = mn ** 2; 
+                document.write("Та вэб сайт руу өглөө орсон тул: " + res);
+
+            } else { 
+                const en = parseInt(prompt("Тоо оруулаарай: "));
+                const res = Math.sqrt(en); 
+                document.write("Та вэб сайт руу орой орж байгаа тул: " + res);
+            }
+        </script>
+    </body>
+</html>

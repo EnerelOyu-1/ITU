@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bodlog 3</title>
+    </head>
+    <body>
+        <h2>
+            Байшин 9 давхар, 3 орцтой, давхартаа 4 айлтай бол гараас өгсөн тоот нь хэддүгээр орцны хэддүгээр давхарын хэд дэх хаалга вэ?
+        </h2>
+        <script>
+ var cnt_of_orts = 3;
+            var cnt_of_dawhar = 9;
+            var cnt_of_ail = 4;
+            var orts_buriin_ail = cnt_of_dawhar * cnt_of_ail;
+            var niit_ail = cnt_of_orts * orts_buriin_ail;
+
+            let toot = parseInt(prompt("Хайх айлийн тоотыг орууларай: "), 10);
+
+            if (toot < 1 || toot > niit_ail) {
+                document.write("Айл олдсонгүй.<br>");
+            } else {
+                let orts = Math.floor((toot - 1) / orts_buriin_ail) + 1;
+                let dwhr = Math.floor(((toot - 1) % orts_buriin_ail) / cnt_of_ail) + 1;
+                let haalag = (toot - 1) % cnt_of_ail + 1;
+
+                document.write(toot + "-р тоот нь " + orts + "-р орцны " + dwhr + "-р давхрын " + haalag + "-р хаалга.");
+            }
+        </script>
+    </body>
+</html>
