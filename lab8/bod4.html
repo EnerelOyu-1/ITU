@@ -12,19 +12,25 @@
                 arr.push(num);
             }
 
-            let gcd = arr[0];
-            for(let i = 1; i < 5; i++){
-                let a = gcd;
-                let b = arr[i];
-
-                while(b != 0){
-                    let temp = b;
-                    b = b % a;
-                    a = temp;
+            function gcd(a, b){
+                if(a == 0){
+                    return b;
                 }
-                gcd = a;
+                return gcd(b % a, a);
             }
-            document.write("Хамгийн бага ерөнхий хуваагдагч нь : "+ gcd); 
+
+            function findGCD(arr, n){
+                let result = arr[0];
+                for(let i = 1; i < n; i++){
+                    result = gcd(arr[i], result);
+                    if(result == 1){
+                        return 1;
+                    }
+                }
+                return result;
+            }
+            const resultGCD = findGCD(arr,5);
+            document.write("Хамгийн бага ерөнхий хуваагдагч нь : "+ resultGCD); 
 
         </script>
     </body>
